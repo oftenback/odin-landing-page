@@ -1,22 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   background: #1F2937;
   font-family: Roboto, sans-serif;
+}
+
+.header,
+.hero-container,
+.info-container,
+.quote-container,
+.cta-container,
+.footer {
+  padding: 64px 240px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   color: #F9FAF8;
-  padding: 24px 100px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .right-links {
@@ -38,31 +50,63 @@ a {
 
 .hero-container {
   display: flex;
+  flex: 1;
   color: #F9FAF8;
+  justify-content: space-between;
+}
+
+.hero-right {
+  display: flex;
+  flex: 1;
+}
+
+.hero-left {
+  flex: 1;
 }
 
 .hero-text {
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 700;
+  flex-wrap: wrap;
 }
 
 button {
   background-color: #3882F6;
+  border-radius: 12px;
   border: 0px;
+  padding: 8px 24px;
 }
 
-.info {
+.info-container {
   display: flex;
+  flex: 1;
   background-color: #F9FAF8;
 }
 
 .quote-container {
   display: flex;
+  flex-direction: column;
   background-color: #E5E7EB;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1F2937;
+  float: left;
+}
+
+.quote-attrib {
+  align-self: flex-end;
 }
 
 .cta-container {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   background-color: #F9FAF8;
@@ -70,7 +114,15 @@ button {
 
 .cta {
   display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding: 48px;
   background-color: #3882F6;
+  border-radius: 12px;
+}
+
+.cta button {
+  border: 4px solid #F9FAF8;
 }
 
 .footer {
@@ -78,4 +130,6 @@ button {
   justify-content: center;
   align-items: center;
   color: #F9FAF8;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
