@@ -15,15 +15,15 @@ body {
 .quote-container,
 .cta-container,
 .footer {
-  padding: 64px 240px;
+  padding: 64px 200px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   color: #F9FAF8;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .logo {
@@ -33,6 +33,8 @@ body {
 
 .right-links {
   display: flex;
+  color: #E5E7EB;
+  font-size: 18px;
 }
 
 ul {
@@ -55,13 +57,23 @@ a {
   justify-content: space-between;
 }
 
+.hero-right,
+.hero-left {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 .hero-right {
   display: flex;
   flex: 1;
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-left {
   flex: 1;
+  padding-right: 64px;
 }
 
 .hero-text {
@@ -70,11 +82,20 @@ a {
   flex-wrap: wrap;
 }
 
+.hero-subtext {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
 button {
   background-color: #3882F6;
   border-radius: 12px;
   border: 0px;
   padding: 8px 24px;
+  color: #F9FAF8;
+  font-weight: 700;
 }
 
 .info-container {
@@ -92,6 +113,12 @@ button {
   align-items: center;
 }
 
+.quote-text,
+.quote-attrib {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
 .quote-text {
   font-size: 36px;
   font-style: italic;
@@ -102,6 +129,8 @@ button {
 
 .quote-attrib {
   align-self: flex-end;
+  font-weight: 800;
+  padding-top: 8px;
 }
 
 .cta-container {
@@ -116,20 +145,27 @@ button {
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
-  padding: 48px;
+  padding: 48px 100px;
   background-color: #3882F6;
   border-radius: 12px;
+  color: #F9FAF8;
+}
+
+.cta-header {
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .cta button {
-  border: 4px solid #F9FAF8;
+  border: 2px solid #F9FAF8;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F9FAF8;
   padding-top: 24px;
   padding-bottom: 24px;
+  color: #E5E7EB;
+  font-size: 18px;
 }
